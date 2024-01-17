@@ -1,0 +1,137 @@
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#mainpanel{
+    border:1px solid black;
+    height: 750px;
+    width: 1200px;
+    
+    overflow: hidden;
+}
+#details{
+    height: 250px;
+}
+#actualimg{
+   position: relative;
+   left:100px;
+   height: 200px;
+}
+#editimg{
+    position: absolute;
+    left:300px;
+    top:180px;
+}
+input[type="file"] {
+    color: transparent;
+}
+#name{
+    position: absolute;
+    left:500px;
+    top:0px;
+}
+#bio{
+    position: absolute;
+    left:500px;
+    top:40px;
+}
+#location{
+    display: inline-flex;
+    position: absolute;
+    left:500px;
+    top:110px;
+}
+#twitter{
+    position: absolute;
+    left:500px;
+    top:120px;
+}
+#link{
+    position: relative;
+    left:100px;
+}
+#repo1{
+    border:1px solid black;
+    height: 100px;
+    width: 400px;
+    position: relative;
+    top:-60px;
+    padding: 10px;
+}
+#repo2{
+    border:1px solid black;
+    height: 100px;
+    width: 400px;
+    position: relative;
+    top:-30px;
+    padding: 10px;
+}
+
+#repo3{
+    border:1px solid black;
+    height: 100px;
+    width: 400px;
+    position: relative;
+    top:0px;
+    padding: 10px;
+}
+#repo4{
+    border:1px solid black;
+    height: 100px;
+    width: 400px;
+    position: relative;
+    top:-425px;
+    left:600px;
+    padding: 10px;
+}
+
+#repo5{
+    border:1px solid black;
+    height: 100px;
+    width: 400px;
+    position: relative;
+    top:-395px;
+    left:600px;
+    padding: 10px;
+}
+
+#repo6{
+    border:1px solid black;
+    height: 100px;
+    width: 400px;
+    position: relative;
+    top:-365px;
+    left:600px;
+    padding: 10px;
+}
+#repositories{
+    padding: 40px;
+    margin: 10px;
+}
+#buttons{
+    position: relative;
+    top:450px;
+    height: 30px;
+    left:37%;
+}
+#buttons button:hover{
+    background-color: #0096FF;
+    color: white;
+}
+#buttons button{
+    height: 30px;
+}
+a.btn{
+    text-decoration: none;
+}
+.btn1{
+    background-color: white;
+    color:#D3D3D3;
+
+}
+.btn2{
+    background-color: white;
+    color:#0096FF;
+}

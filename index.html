@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git-Hub</title>
+</head>
+<link href="index.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<body>
+    <div id="mainpanel">
+        <div id="details">
+            <div id="img">
+                <img src="https://www.shutterstock.com/image-vector/vector-flat-illustration-grayscale-avatar-600nw-2264922221.jpg" height="150px" id="actualimg" />
+                <input id="editimg" type="file" onchange="updateImage()"/>
+            </div>
+            <h2 id="name"><b>John Deo</b></h2>
+            <h5 id="bio">Bio goes here</h5>
+            <div id="location">
+                <i class="bi bi-geo-alt-fill"></i><h5 style="position: absolute;left:20px;top:-20px">Orlando</h5>
+            </div>
+            <h5 id="twitter">Twitter : https://twitter.com/john_deo</h5>
+            <h5 id="link"><i class="bi bi-link"></i> https://github.com/john_deo</h5>
+        </div>
+        <div id="buttons">
+            <button onclick="ls()"><<</button>
+           <button onclick="one()">1</button>
+           <button onclick="t()">2</button>
+           <button onclick="th()">3</button>
+           <button onclick="f()">4</button>
+           <button onclick="fi()">5</button>
+           <button onclick="s()">6</button>
+           <button onclick="se()">7</button>
+           <button onclick="e()">8</button>
+           <button onclick="n()">9</button>
+           <button onclick="rs()">>></button>
+        </div>
+        <div id="repositories">
+            <div id="slide1">
+            <div id="repo1" class="repo">
+                <h2 style="color:#0096FF;position: relative;top:-10px">Heroes</h2>
+                <h6 style="position: relative;top:-30px"> Heros Description goes here</h6>
+                <button style="position: relative;top:-40px;color: white;background-color: #0096FF;">javsacript</button>
+                <button style="position: relative;top:-40px;color: white;background-color: #0096FF;">angular</button>
+                <button style="position: relative;top:-40px;color: white;background-color: #0096FF;">angularjs</button>
+                <button style="position: relative;top:-40px;color: white;background-color:#0096FF;">Angular 2+</button>
+            </div>
+            <div id="repo2" class="repo">
+                <h2 style="color: #0096FF;position: relative;top:-10px">Heroes</h2>
+                <h6 style="position: relative;top:-30px">Heros Description goes here</h6>
+                <button style="position: relative;top:-40px;color: white;background-color: #0096FF;">javsacript</button>
+                <button style="position: relative;top:-40px;color: white;background-color: #0096FF;">angular</button>
+                <button style="position: relative;top:-40px;color: white;background-color: #0096FF;">angularjs</button>
+                
+            </div>
+            <div id="repo3" class="repo">
+                <h2 style="color: #0096FF;position: relative;top:-10px">Heroes</h2>
+                <h6 style="position: relative;top:-30px">Heros Description goes here</h6>
+                <button style="position: relative;top:-40px;color: white;background-color:#0096FF;">javsacript</button>
+                <button style="position: relative;top:-40px;color: white;background-color: #0096FF;">angular</button>
+                <button style="position: relative;top:-40px;color: white;background-color: #0096FF;">angularjs</button>
+                <button style="position: relative;top:-40px;color: white;background-color:#0096FF;">Angular 2+</button>
+                
+            </div>
+            <div id="repo4" class="repo">
+                <h2 style="color:#0096FF;position: relative;top:-10px">Heroes</h2>
+                <h6 style="position: relative;top:-30px">Heros Description goes here</h6>
+                <button style="position: relative;top:-40px;color: white;background-color: #0096FF;">javsacript</button>
+                <button style="position: relative;top:-40px;color: white;background-color: #0096FF;">angular</button>
+                <button style="position: relative;top:-40px;color: white;background-color: #0096FF;">angularjs</button>
+                
+            </div>
+            <div id="repo5" class="repo">
+                <h2 style="color:#0096FF;position: relative;top:-10px">Heroes</h2>
+                <h6 style="position: relative;top:-30px">Heros Description goes here</h6>
+                <button style="position: relative;top:-40px;color: white;background-color: #0096FF;">javsacript</button>
+                <button style="position: relative;top:-40px;color: white;background-color:#0096FF;">angular</button>
+                <button style="position: relative;top:-40px;color: white;background-color:#0096FF;">angularjs</button>
+                <button style="position: relative;top:-40px;color: white;background-color: #0096FF;">Angular 2+</button>
+            </div>
+            <div id="repo6" class="repo">
+                <h2 style="color: #0096FF;position: relative;top:-10px">Heroes</h2>
+                <h6 style="position: relative;top:-30px">Heros Description goes here</h6>
+                <button style="position: relative;top:-40px;color: white;background-color:#0096FF;">javsacript</button>
+                <button style="position: relative;top:-40px;color: white;background-color: #0096FF;">angular</button>
+                <button style="position: relative;top:-40px;color: white;background-color: #0096FF;">angularjs</button>
+                
+            </div>
+        </div>
+        </div>
+    
+    <script>
+         function updateImage() {
+            let inputElement = document.getElementById("editimg");
+            let imgElement = document.getElementById("actualimg");
+            if (inputElement.files && inputElement.files[0]) {
+                imgElement.src = URL.createObjectURL(inputElement.files[0]);
+            } else {
+                imgElement.src = "https://www.shutterstock.com/image-vector/vector-flat-illustration-grayscale-avatar-600nw-2264922221.jpg";
+            }
+        }
+        let slide1=document.getElementById("slide1");
+        let slide2=document.getElementById("slide2");
+        function t() {
+            if (slide2.hidden == true) {
+                slide2.hidden = false;
+                slide1.innerHTML = slide2.innerHTML;
+                slide1.hidden=true;
+            }
+        }
+
+    </script>
+   <a href="#" class="btn1"><---Older</a>
+   <a href="#" class="btn2">Newer---></a>
+</div>
+</body>
+</html>
